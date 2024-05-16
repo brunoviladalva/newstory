@@ -4,7 +4,21 @@
     #3A468C
     #F2F2F2
     #BAC3D4 */
-    color: #010440;
+    --fundo-menu-lateral: #010440;
     color: #030526;
     color: #3A468C;
+    --fundo-claro: #F2F2F2;
+    --fundo-claro2: #BAC3D4;
+    
+    --texto-claro: #030526;
+    --texto-escuro: #BAC3D4;
+
+    --texto-titulo-claro: #030526;
+    --texto-titulo-escuro: #BAC3D4;
+
+
+}
+
+body {
+    background: var(--fundo-menu-lateral);
 }
