@@ -17,6 +17,7 @@
     
     --texto-claro: #dfe0f1;
     --texto-escuro: #0f0f0f;
+    --texto-branco:#f2f2f2;
     --texto-rover: #0c0c0c;
     --texto-opaco: #81888c;
 
@@ -61,7 +62,7 @@ h1, h2, h3, h4, h5 ,h6 {
     bottom: 0;
     width: 300px;
     transition: all ease-in-out 0.5s;
-    z-index: 0;
+    z-index: 99;
     padding: 0 15px;
     background: var(--fundo-menu-lateral);
     overflow-y: auto;
@@ -184,7 +185,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 /* menu mobile*/
-.mobile-nav-toggle {
+.mobile-nav-toggle{
     position: fixed;
     top: 15px;
     right: 15px;
@@ -202,24 +203,25 @@ h1, h2, h3, h4, h5 ,h6 {
     display: inline-flex;
     cursor: pointer;
 }
-.mobile-nav-active {
+.mobile-nav-active{
     overflow: hidden;
 }
-.mobile-nav-active #header {
+.mobile-nav-active #header{
     left: 0;
 }
 
 /*hero*/
 
+/* hero */
 #hero {
     width: 100%;
     height: 100vh;
-    background: url();
+    background: url("../img/fundo-hero.jpg") top center;
     background-size: cover;
 }
 #hero::before {
     content: "";
-    background: rgba(5,13,14, 0.3);
+    background: rgba(5, 13, 24, 0.555);
     position: absolute;
     top: 0;
     right: 0;
@@ -231,5 +233,19 @@ h1, h2, h3, h4, h5 ,h6 {
     position: relative;
     z-index: 2;
     min-width: 300px;
-    
+}
+#hero h1 {
+    margin: 0 0 10 px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--texto-claro);
+
+}
+#hero p span {
+    color: var(--texto-branco);
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid ;
+
 }
