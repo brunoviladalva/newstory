@@ -239,11 +239,13 @@ h1, h2, h3, h4, h5 ,h6 {
     font-size: 120px;
     font-weight: 700;
     line-height: 120px;
-    color: var(--texto-claro);
+    color: var(--texto-branco);
 
 }
 #hero p {
     font-size: 30px;
+    color: var(--texto-branco);
+    background: rgba(11, 31, 31, 0.5);
 }
 #hero p span {
     color: var(--texto-branco);
@@ -258,17 +260,11 @@ h1, h2, h3, h4, h5 ,h6 {
     }
 }
 @media (max-width: 768px) {
-    #hero h1 {
-        padding-left: 50px;
+    #hero h1 {    
         font-size: 75px;
-        line-height: 45px;
-        align-content: center;
-        justify-content: center;
+        line-height: 55px;     
     }
     #hero p {
-        padding-left: 50px;
         font-size: 25px;
-        align-content: center;
-        justify-content: center;
     }
 }
