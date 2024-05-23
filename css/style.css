@@ -235,17 +235,40 @@ h1, h2, h3, h4, h5 ,h6 {
     min-width: 300px;
 }
 #hero h1 {
-    margin: 0 0 10 px 0;
-    font-size: 64px;
+    margin: 0 0 10px 0;
+    font-size: 120px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 120px;
     color: var(--texto-claro);
 
+}
+#hero p {
+    font-size: 30px;
 }
 #hero p span {
     color: var(--texto-branco);
     padding-bottom: 5px;
     letter-spacing: 1px;
-    border-bottom: 3px solid ;
+    border-bottom: 3px solid var(--cor-detalhes);
+}
 
+@media (max-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px) {
+    #hero h1 {
+        padding-left: 50px;
+        font-size: 75px;
+        line-height: 45px;
+        align-content: center;
+        justify-content: center;
+    }
+    #hero p {
+        padding-left: 50px;
+        font-size: 25px;
+        align-content: center;
+        justify-content: center;
+    }
 }
