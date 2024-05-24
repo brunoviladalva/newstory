@@ -10,7 +10,8 @@
     color: #030526;
     color: #3A468C;
     --fundo-claro: #F2F2F2;
-    --fundo-claro2: #BAC3D4;
+    --fundo-claro2: #646d7c;
+    --fundo-escuro: #0f0909;
 
     --borda-clara: #F2F2F2;
     --borda-escura: #030303; 
@@ -298,3 +299,38 @@ h1, h2, h3, h4, h5 ,h6 {
         font-size: 25px;
     }
 }
+
+/* Seções Gerais */
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    background: var(--fundo-claro2)
+}
+.section-bg {
+    background: var(--fundo-escuro);
+    color: var(--texto-claro);
+}
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: var(--texto-titulo-escuro);
+    position: relative;
+}
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--cor-detalhes);
+    bottom: 0;
+    left: 0;
+}
+.section-title p {
+    margin-bottom: 0;
+}
+
+/* Sobre */ 
