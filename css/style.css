@@ -12,6 +12,7 @@
     --fundo-claro: #F2F2F2;
     --fundo-claro2: #646d7c;
     --fundo-escuro: #0f0909;
+    --fundo-vendas:#645c5cb4;
 
     --borda-clara: #F2F2F2;
     --borda-escura: #030303; 
@@ -308,7 +309,7 @@ section {
     background: var(--fundo-claro2)
 }
 .section-bg {
-    background: var(--fundo-escuro);
+    background: var(--fundo-vendas);
     color: var(--texto-claro);
 }
 .section-title{
@@ -398,6 +399,9 @@ section {
 }
 
 /* skills // habilidades // vendas*/
+.skills h2{
+    color: var(--cor-detalhes);
+}
 .skills .progress {
     height: 60px;
     display: block;
